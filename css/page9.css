@@ -1,0 +1,60 @@
+#page9 {
+    margin: 0;
+    padding: 100px 50px;
+    background-color: white;
+    display: flex;
+    flex-flow: column wrap;
+}
+
+.contact_us_button {
+    background-color: #ff9c50;
+    border-radius: 5px;
+    padding: 0px 20px;
+}
+
+@media (min-width: 1201px) {
+    #contacts {
+        display: grid;
+        grid-template-columns: 50% auto;
+    }
+
+    #contact_fields {
+        grid-row-start: 1;
+        grid-column-start: 1;
+        grid-column-end: 2;
+        display: flex;
+        flex-flow: column wrap;
+    }
+
+    #contact_field_message {
+        grid-row-start: 1;
+        grid-column-start: 2;
+        grid-column-end: 3;
+        resize: none;
+    }
+
+    #page9 h1, #page9 p, #page9 img, .contact_us_button {
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+
+@media (max-width: 1200px) {
+    #contacts {
+        display: flex;
+        flex-flow: column wrap;
+    }
+
+    #contact_fields {
+        display: flex;
+        flex-flow: column wrap;
+    }
+
+    #contact_field_message {
+        resize: none;
+    }
+
+    .contact_us_button {
+        width: 100%;
+    }
+}

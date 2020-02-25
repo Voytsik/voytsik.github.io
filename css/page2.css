@@ -1,0 +1,127 @@
+#page2 {
+    margin: 0;
+    padding: 0;
+    background-color: #f5f5f5;
+}
+
+#download_button2 {
+    background-color: #ff9c50;
+    border-radius: 5px;
+}
+
+#download_button2:hover {
+    background-color: rgba(255, 180, 180, 1);
+}
+
+#tabs {
+    display: flex;
+}
+
+.tab {
+    background-color: #303030;
+    margin: 1px;
+}
+
+.active {
+    background-color: #ff9c50;
+}
+
+@media (min-width: 1200px) {
+    #page2 {
+        display: grid;
+        grid-template-columns: 8% 14% 4% auto 8% 15% 8%;
+        grid-template-rows: 30% 45% 350px;
+    }
+
+    #tabs_cover {
+        grid-column-start: 2;
+        grid-column-end: 3;
+        grid-row-start: 2;
+        grid-row-end: 3;
+    }
+
+    #tabs {
+        flex-direction: column;
+    }
+
+    #item21 {
+        grid-column-start: 4;
+        grid-column-end: 5;
+        grid-row-start: 2;
+        grid-row-end: 3;
+    }
+
+    #item22 {
+        grid-column-start: 6;
+        grid-column-end: 7;
+        grid-row-start: 2;
+        grid-row-end: 3;
+    }
+
+    #download_button2 {
+        width: 140px;
+    }
+
+    .tab {
+        width: 160px;
+        height: 160px;
+    }
+}
+
+@media (width: 1200px) {
+    .tab {
+        width: auto;
+    }
+}
+
+@media (max-width: 1200px) {
+    #page2 {
+        padding: 20px;
+        display: flex;
+        flex-flow: column wrap;
+    }
+
+    #tabs {
+        width: 100%;
+        flex-direction: row;
+        horiz-align: center;
+    }
+
+    #item21 {
+        margin-left: 30px;
+        margin-right: 30px;
+    }
+
+    #download_button2 {
+        width: 70%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    #download_button2 p {
+        text-align: center;
+        width: 100%;
+    }
+
+    #item22 {
+        width: 80%;
+        margin-left: auto;
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+
+    #item22 img {
+        width: 80%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    #tabs_cover {
+        width: 100%;
+    }
+
+    #tabs a {
+        width: 33%;
+        text-align: center;
+    }
+}

@@ -1,0 +1,24 @@
+#footer {
+    width: 100%;
+    background-color: black;
+    display: flex;
+    flex-flow: column wrap;
+}
+
+#footer p, #social_media_icons2 {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#social_media_icons2 {
+    display: flex;
+    flex-flow: row wrap;
+    margin-top: 20px;
+}
+
+.social_media_icon2 {
+    height: 60px;
+    width: 60px;
+    margin-right: 10px;
+    margin-left: 10px;
+}

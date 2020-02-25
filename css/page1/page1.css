@@ -1,0 +1,70 @@
+#page1 {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    width: 100%;
+    background-image: url(../../images/img1.jpg);
+    background-position: center center;
+    background-repeat: no-repeat no-repeat;
+    background-size: cover;
+}
+
+#item12, #item13, .sign_up_form, .social_media {
+    z-index: 5;
+}
+
+.download_button {
+    border: 3px solid white;
+    width: 150px;
+    padding: 0 10px 0 40px;
+}
+
+.download_button:hover {
+    border: 3px solid #ff9c50;
+    background-color: rgba(255, 156, 80, 0.3);
+}
+
+.download_button_text {
+    font-family: 'Open Sans', sans-serif;
+    color: white;
+    font-size: 24px;
+    text-align: center;
+
+}
+
+@media (min-width: 1200px) {
+    #page1 {
+        display: grid;
+        grid-template-columns: 8% 32% auto 26% 8%;
+        grid-template-rows: 5% 15% 6fr 13% 1fr;
+    }
+
+    #item110 {
+        grid-column-start: 1;
+        grid-column-end: 6;
+        grid-row-start: 1;
+        grid-row-end: 6;
+        background-color: black;
+        opacity: 0.3;
+    }
+
+    #item12 {
+        grid-column-start: 1;
+        grid-column-end: 6;
+        grid-row-start: 1;
+        grid-row-end: 2;
+    }
+
+    #item13 {
+        grid-column-start: 2;
+        grid-column-end: 3;
+        grid-row-start: 3;
+        grid-row-end: 4;
+    }
+}
+
+@media (max-width: 1200px) {
+    #item13 {
+        margin: 20px;
+    }
+}

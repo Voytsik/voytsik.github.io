@@ -1,0 +1,80 @@
+.sign_up_form {
+    display: grid;
+    grid-template-rows: 60px 330px 60px;
+    border-radius: 5px;
+    padding-top: 20px;
+}
+
+.sign_up_form_title {
+    grid-row-start: 1;
+    grid-row-end: 2;
+    font-size: 22px;
+    text-align: center;
+    background-color: lightgray;
+    border-radius: 5px 5px 0 0;
+}
+
+.sign_up_form_fields {
+    grid-row-start: 2;
+    grid-row-end: 3;
+    display: grid;
+    grid-template-rows: 10px 70px 10px 70px 10px 70px 30px;
+    background-color: white;
+}
+
+.sign_up_form_field {
+    font-size: 18px;
+    outline:none;
+    border: 0;
+    box-shadow: 0 6px 4px -4px rgba(0, 0, 0, .2);
+    padding: 20px;
+    margin: 20px 20px 40px;
+}
+
+.field1 {
+    grid-row-start: 2;
+    grid-row-end: 3;
+    margin-top: 30px;
+}
+
+.field2 {
+    grid-row-start: 4;
+    grid-row-end: 5;
+    margin-top: 40px;
+}
+
+.field3 {
+    grid-row-start: 6;
+    grid-row-end: 7;
+    margin-top: 50px;
+}
+
+.sign_up_form_button {
+    grid-row-start: 3;
+    grid-row-end: 4;
+    background-color: #ff9c50;
+    border-radius: 0 0 5px 5px;
+}
+
+.sign_up_form_button div {
+    height: 100%;
+}
+
+.sign_up_form_button a {
+    height: 100%;
+}
+
+.sign_up_form_button_text {
+    font-size: 18px;
+    color: white;
+    text-align: center;
+}
+
+@media (min-width: 1200px) {
+    .sign_up_form {
+        grid-column-start: 4;
+        grid-column-end: 5;
+        grid-row-start: 3;
+        grid-row-end: 4;
+    }
+}
